@@ -1,0 +1,137 @@
+﻿
+@{
+    ViewData["Title"] = "Diary1";
+    Layout = "~/Views/Shared/layout.cshtml";
+}
+
+
+<div class="row m-0">
+    <div class="col-md-12 ml-5">
+        <label id="lbname" class="ml-5"><span style="text-align:center"><h5>Naresh saini</h5></span></label>
+        <label id="lbname" class="ml-5"><span>Class X A</span></label>
+
+
+
+
+    </div>
+
+
+
+
+    <div class=" col-md-12 mt-3 m-3">
+        <center>
+
+            <h6>Teacher Name</h6>
+
+            <select id=" ddlteachername" typeof="text" style="width:190px;height:35px">
+                <option>Naresh Saini</option>
+                <option>Amit</option>
+            </select>
+        </center>
+    </div>
+
+
+
+</div>
+<div class="row m-0 mt-4">
+    <div class="ml-5">
+        <h6>From</h6>
+
+        <input id="txtfrom" type="date" />
+    </div>
+
+    <div class=" ml-5">
+        <h6>To</h6>
+
+        <input id="txtto" type="date" />
+    </div>
+</div>
+
+<div class="row m-3 mt-5">
+    <div class="ml-3">
+        <center><h6>SNo.</h6> </center>
+        <center>1</center>
+        <center> 2 </center>
+        <center> 3</center>
+        <center> 4 </center>
+    </div>
+    <div class="ml-2">
+        <center><h6>Date</h6> </center>
+        <center> <input id="txtto" type="date" /></center>
+        <center> <input id="txtto" type="date" /> </center>
+        <center>  <input id="txtto" type="date" /></center>
+        <center>  <input id="txtto" type="date" /></center>
+
+    </div>
+
+    <div class="ml-4">
+
+        <center><h6>Teacher</h6> </center>
+        <a href="#">
+            <center><h6>Massage</h6> </center>
+        </a>
+        <a href="#">
+            <center><h6>Massage</h6> </center>
+        </a>
+        <a href="#">
+            <center><h6>Massage</h6> </center>
+        </a>
+        <a href="#">
+            <center><h6>Massage</h6> </center>
+
+        </a>
+    </div>
+
+    <div class="ml-3">
+        <center><h6>Parents</h6></center>
+        <a href="#">
+            <center><h6>Massage</h6> </center>
+        </a>
+        <a href="#">
+            <center><h6>Massage</h6> </center>
+        </a>
+        <a href="#">
+            <center><h6>Massage</h6> </center>
+        </a>
+        <a href="#">
+            <center><h6>Massage</h6> </center>
+        </a>
+    </div>
+
+</div>
+
+
+<br />
+
+
+@*<script src="~/js/jquery-3.0.0.js"></script>
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#parentsmsg").submit(function (e) {
+                e.preventDefault();
+                var apiurl = 'http://180.149.242.217/ExcellentBasics/API/AddDiary';
+                var data = {
+                    parentmessage: $("#txtparents").val()
+
+                }
+                $.ajax({
+                    url: apiurl,
+                    type: 'POST',
+                    dataType: 'json',
+                    data: data,
+                    success: function (d) {
+                        alert("Saved Successfully");
+                        loction.reload();
+                        document.getElementById("parentsmsg").reset();
+                    },
+                    error: function () {
+                        alert("Error please try again");
+                    }
+                });
+            });
+        });
+
+
+    </script>*@
